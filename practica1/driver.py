@@ -2,6 +2,7 @@ from reportlab.platypus import (SimpleDocTemplate, PageBreak, Image, Spacer,
 Paragraph, Table,)
 from pysnmp.hlapi import *
 from reportlab.pdfgen import canvas
+import time
 
 def consultaSNMP(comunidad,host,oid, puerto):
     errorIndication, errorStatus, errorIndex, varBinds = next(
@@ -127,7 +128,9 @@ def report():
         i = i + 1
     #print(interfaces)
 
-    output = canvas.Canvas("SNMPreport.pdf")
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+
+    output = canvas.Canvas("SNMPreport" + timestr + ".pdf")
     output.setTitle("SNMPReport")
     output.drawString(50, 800, "Administración de Servicios en Red")
     output.drawString(50, 775, "Práctica 1")

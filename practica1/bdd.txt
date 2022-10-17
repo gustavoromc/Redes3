@@ -1,2 +1,2 @@
+comunidadSNMPWin 1 161 10.100.74.144
 comunidadSNMP 1 161 localhost
-comunidadSNMPWin 1 161 192.168.1.77
