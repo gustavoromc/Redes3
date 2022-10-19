@@ -162,9 +162,9 @@ def report():
 
         estadoInterfaz = consultaSNMP(comunidad, ip, "1.3.6.1.2.1.2.2.1.7." + str(i), puerto)
 
-        if estadoInterfaz == "1":
+        if estadoInterfaz == " 1":
             matriz.append([descrInterfaz, "UP"])
-        elif estadoInterfaz == "2":
+        elif estadoInterfaz == " 2":
             matriz.append([descrInterfaz, "DOWN"])
         else:
             matriz.append([descrInterfaz, "TESTING"])
