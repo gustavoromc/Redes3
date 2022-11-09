@@ -2,7 +2,7 @@
 import rrdtool
 ret = rrdtool.create("segmentosRed.rrd",
                      "--start",'N',
-                     "--step",'300',
+                     "--step",'60',
                      "DS:paquetesUnicast:COUNTER:120:U:U",
                      "DS:paquetesIPv4:COUNTER:120:U:U",
                      "DS:paquetesICMPecho:COUNTER:120:U:U",

@@ -3,19 +3,19 @@ import rrdtool
 from getSNMP import consultaSNMP
 while 1:
     pack_uni = int (
-        consultaSNMP('eduardoCuevas','192.168.1.77',
-                     '1.3.6.1.2.1.2.2.1.11.3'))
+        consultaSNMP('gustavoRomero','172.20.10.12',
+                     '1.3.6.1.2.1.2.2.1.11.10'))
     pack_ipv4 = int (
-        consultaSNMP('eduardoCuevas','192.168.1.77',
+        consultaSNMP('gustavoRomero','172.20.10.12',
                      '1.3.6.1.2.1.4.3.0'))
     msjs_ICMP = int (
-        consultaSNMP('eduardoCuevas','192.168.1.77',
+        consultaSNMP('gustavoRomero','172.20.10.12',
                      '1.3.6.1.2.1.5.8.0'))
     segmentos_entrada = int (
-        consultaSNMP('eduardoCuevas','192.168.1.77',
+        consultaSNMP('gustavoRomero','172.20.10.12',
                      '1.3.6.1.2.1.6.10.0'))
     datagramas_UDP = int (
-        consultaSNMP('eduardoCuevas','192.168.1.77',
+        consultaSNMP('gustavoRomero','172.20.10.12',
                      '1.3.6.1.2.1.7.1.0'))
 
 
